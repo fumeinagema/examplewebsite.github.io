@@ -3,28 +3,44 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: rgb(147, 219, 147);
+    background-color: #1e1e1e; /* Dark background for a modern look */
+    color: #fff; /* White text for contrast */
 }
 
 header, footer {
-    background-color: #f4f4f4;
+    background-color: #333;
     text-align: center;
     padding: 1em;
+    color: #fff; /* White text */
 }
 
 header {
-    background-color: #e0f7fa; /* Green background for the header */
+    background-color: #444; /* Slightly lighter background for header */
+}
+
+#site-name {
+    color: #ff4081; /* Pink color for a striking effect */
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 1.8em; /* Slightly larger font size for h2 */
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: #ff4081; /* Matching pink color */
 }
 
 nav {
-    background: #333;
+    background: #444;
     color: #fff;
     padding: 1em;
     text-align: center;
 }
 
 nav a {
-    color: #fff;
+    color: #ffeb3b; /* Bright yellow color for navigation links */
     margin: 0 1em;
     text-decoration: none;
 }
@@ -33,27 +49,40 @@ section {
     padding: 2em;
     margin: 1em auto;
     max-width: 800px;
-    background-color: #fff; /* Ocean blue background color */
-    border-radius: 10px; /* Added border-radius for better styling */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box-shadow for better visibility */
-    color: black; /* White text color for paragraphs */
+    background-color: #333; /* Darker background for sections */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
+    font-size: 1.8em; /* Larger font size for section titles */
+    text-align: center; /* Center the section titles */
+    margin-bottom: 0.5em; /* Space below the section titles */
+    color: #4caf50; /* Green color for section titles */
 }
 
 p, ul li {
     font-size: 1.2em;
     margin-bottom: 1em;
+    color: #fff; /* White text for paragraphs and list items */
 }
 
-#site-name {
-    color: rgb(76, 76, 238);
-    font-size: 45px;
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li::before {
+    content: "• ";
+    color: #ffeb3b; /* Bright yellow color for list bullets */
+    font-weight: bold;
+}
+
+.image-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .first-image, .degree-image {
@@ -62,33 +91,11 @@ p, ul li {
     height: auto; /* Maintains the aspect ratio */
     display: block;
     margin: 10px auto; /* Centers the image */
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.image-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.image-gallery img {
-    width: calc(50% - 20px);
-    margin-bottom: 20px;
-}
-
-@media (max-width: 600px) {
-    .image-gallery img {
-        width: 100%;
-    }
-}
-
-#sidemap{
-    color: rgb(0, 255, 170);
+#sidemap {
+    color: #00e676; /* Bright green color for sidemap */
     font-size: 20px;
 }
