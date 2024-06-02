@@ -3,22 +3,21 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; 
-}
-
-title{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(147, 219, 147);
 }
 
 header, footer {
-    background-color: #0044cc; 
+    background-color: #f4f4f4;
     text-align: center;
     padding: 1em;
-    color: white;
+}
+
+header {
+    background-color: #e0f7fa; /* Green background for the header */
 }
 
 nav {
-    background: #003366; 
+    background: #333;
     color: #fff;
     padding: 1em;
     text-align: center;
@@ -34,10 +33,10 @@ section {
     padding: 2em;
     margin: 1em auto;
     max-width: 800px;
-    background-color: #e0f7fa; 
-    border-radius: 10px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    color: #003366; 
+    background-color: #fff; /* Ocean blue background color */
+    border-radius: 10px; /* Added border-radius for better styling */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box-shadow for better visibility */
+    color: black; /* White text color for paragraphs */
 }
 
 h2 {
@@ -51,18 +50,18 @@ p, ul li {
 }
 
 #site-name {
-    color: white;
+    color: rgb(76, 76, 238);
     font-size: 45px;
     display: flex;
     justify-content: center;
 }
 
 .first-image, .degree-image {
-    width: 100%; 
-    max-width: 400px; 
-    height: auto; 
+    width: 100%; /* Ensures the image scales with the width of the container */
+    max-width: 600px; /* Sets a maximum width to keep the image readable */
+    height: auto; /* Maintains the aspect ratio */
     display: block;
-    margin: 10px auto; 
+    margin: 10px auto; /* Centers the image */
 }
 
 .image-container {
@@ -87,4 +86,9 @@ p, ul li {
     .image-gallery img {
         width: 100%;
     }
+}
+
+#sidemap{
+    color: rgb(0, 255, 170);
+    font-size: 20px;
 }

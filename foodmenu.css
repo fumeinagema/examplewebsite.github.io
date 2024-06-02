@@ -17,15 +17,23 @@ header {
 }
 
 #site-name {
-    color: #0077b6; /* Ocean blue color */
-    font-family: 'Courier New', Courier, monospace; /* Cool font */
+    color: rgb(76, 76, 238);
     font-size: 45px;
+    display: flex;
+    justify-content: center;
 }
 
 h2 {
     font-size: 1.5em;
     margin-bottom: 0.5em;
     text-align: center;
+}
+
+.carvery-title {
+    font-size: 2.5em; /* Larger font size for Weekend Carvery title */
+    text-align: center; /* Center the title */
+    margin-bottom: 1em; /* Space below the title */
+    color: #0077b6; /* Ocean blue color */
 }
 
 nav {
@@ -49,6 +57,17 @@ section {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #000; /* Black text color for paragraphs */
+}
+
+.menu-category {
+    margin-bottom: 2em; /* Space between categories */
+}
+
+.category-title {
+    font-size: 2em; /* Larger font size for category titles */
+    text-align: center; /* Center the category titles */
+    margin-bottom: 0.5em; /* Space below the category titles */
+    color: #0077b6; /* Ocean blue color */
 }
 
 .menu-container {
@@ -97,7 +116,7 @@ section {
     text-align: center;
 }
 
-centered-list li::before {
+.centered-list li::before {
     content: "• ";
     color: #0077b6; /* Ocean blue color for list bullets */
     font-weight: bold;
@@ -112,4 +131,9 @@ ul li::before {
     content: "• ";
     color: #0077b6; /* Ocean blue color for list bullets */
     font-weight: bold;
+}
+
+#sidemap{
+    color: aquamarine;
+    font-size: 25px;
 }
