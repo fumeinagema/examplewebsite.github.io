@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BJ's American Diner</title>
     <link rel="stylesheet" href="foodmenu.css">
+    <style>
+        .highlight-image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .highlight-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .highlight-image.small {
+            width: 100px; /* Set a smaller width for the smallest image */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -42,10 +57,6 @@
                     <img src="food18.jpg" alt="Ground Beef Taco Salad" class="menu-image">
                     <p class="menu-description">Ground Beef Taco Salad</p>
                 </div>
-                <div class="menu-item">
-                    <img src="food19.jpg" alt="Chicago Styled Pizza" class="menu-image">
-                    <p class="menu-description">Chicago Styled Pizza</p>
-                </div>
             </div>
         </div>
         <div class="menu-category" id="uk-dishes">
@@ -62,6 +73,18 @@
                 <div class="menu-item">
                     <img src="food12.jpg" alt="Fillet Steak" class="menu-image">
                     <p class="menu-description">Fillet Steak</p>
+                </div>
+                <div class="menu-item">
+                    <img src="food22.jpg" alt="Gammon Egg Chips and Peas" class="menu-image">
+                    <p class="menu-description">Gammon Egg Chips and Peas</p>
+                </div>
+                <div class="menu-item">
+                    <img src="food23.jpg" alt="Meat and Potato Pie" class="menu-image">
+                    <p class="menu-description">Meat and Potato Pie</p>
+                </div>
+                <div class="menu-item">
+                    <img src="food24.jpg" alt="Cornish Pastry" class="menu-image">
+                    <p class="menu-description">Cornish Pastry</p>
                 </div>
             </div>
         </div>
@@ -115,6 +138,19 @@
                 </div>
             </div>
         </div>
+        <div class="menu-category" id="italian-dishes">
+            <h3 class="category-title">Italian Dishes</h3>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <img src="food19.jpg" alt="Spaghetti Bolognese" class="menu-image">
+                    <p class="menu-description">Spaghetti Bolognese</p>
+                </div>
+                <div class="menu-item">
+                    <img src="food25.jpg" alt="Meatballs" class="menu-image">
+                    <p class="menu-description">Meatballs</p>
+                </div>
+            </div>
+        </div>
         <div class="menu-category" id="indian-dishes">
             <h3 class="category-title">Indian Dishes</h3>
             <div class="menu-container">
@@ -129,6 +165,13 @@
         <h2 class="carvery-title">Weekend Carvery</h2>
         <div class="highlight-container">
             <img src="carvey.jpg" alt="Weekend Carvery" class="highlight-image">
+            <div class="highlight-image-container">
+                <img src="buffet1.jpg" alt="Buffet 1" width="600" height="400" class="highlight-image">
+                <img src="buffet2.jpg" alt="Buffet 2" width="600" height="400" class="highlight-image">
+                <img src="buffet3.jpg" alt="Buffet 3" width="400" height="300" class="highlight-image">
+                <img src="buffet4.jpg" alt="Buffet 4" width="300" height="150" class="highlight-image">
+            </div>
+            
             <p class="highlight-text">Experience the ultimate Weekend Carvery at BJ's American Diner. Our succulent roasted meats, perfectly cooked vegetables, and traditional Yorkshire puddings are a feast for the senses. Join us every Saturday and Sunday for a dining experience that brings the best of British cuisine to Dubai Green Community. This will be operated on a buffet-style basis where our chef will serve the cut of your meat selection. The vast selection of sides, including the kids' favourites, will be on a help-yourself, all-you-can-eat basis.</p>
             <p class="highlight-text">
                 Our carvery includes a selection of Starters:
