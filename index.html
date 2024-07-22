@@ -1,55 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BJ's American Diner</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Site</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
-    <header>
-        <h1 id="site-name">Welcome to BJ's American Diner</h1>
-        <h2>Our Proposal For Unit G05</h2>
-    </header>
-    <nav>
-        <a id="sidemap">Site Map here <br/> <br/> </a>
-        <a href="#restaurant-plan">Restaurant Plan</a>
-        <a href="#concept-quality">Concept & Quality</a>
-        <a href="#background-experience">Background & Experience</a>
-        <a href="foodmenu.html">Food Menu</a>
-    </nav>
-    <section id="restaurant-plan">
-        <h2>Restaurant Plan</h2>
-        <p>We are planning an indoor family dining restaurant with a bar and additional outdoor seating. Our contractors will fully renovate the space, including a new kitchen, counters, and furniture.</p>
-        <ul>
-            <li>The kitchen and counter area will occupy around 500 square feet, leaving ample space inside for comfortable seating.</li>
-            <li>The outside area will be designed to be very attractive, giving customers the option of outdoor seating.</li>
-            <li>We are considering fencing the outdoor area in an eye-catching way.</li>
-            <li>We include a rough sketch for the proposed layout:</li>
-        </ul>
-        <div class="image-container">
-            <img src="layout.jpg" alt="Proposed Layout" class="first-image">
-            <img src="layout2.jpg" alt="Proposed Layout 1" class="first-image">
+    <!-- Header -->
+    <header class="d-flex flex-wrap justify-content-between align-items-center py-3 border-bottom bg-light">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4 text-primary">Safety Deposit Box</span>
+          <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-safe-fill ms-2" viewBox="0 0 16 16">
+              <path d="M9.778 9.414A2 2 0 1 1 6.95 6.586a2 2 0 0 1 2.828 2.828"/>
+              <path d="M2.5 0A1.5 1.5 0 0 0 1 1.5V3H.5a.5.5 0 0 0 0 1H1v3.5H.5a.5.5 0 0 0 0 1H1V12H.5a.5.5 0 0 0 0 1H1v1.5A1.5 1.5 0 0 0 2.5 16h12a1.5 1.5 0 0 0 1.5-1.5v-13A1.5 1.5 0 0 0 14.5 0zm3.036 4.464 1.09 1.09a3 3 0 0 1 3.476 0l1.09-1.09a.5.5 0 1 1 .707.708l-1.09 1.09c.74 1.037.74 2.44 0 3.476l1.09 1.09a.5.5 0 1 1-.707.708l-1.09-1.09a3 3 0 0 1-3.476 0l-1.09 1.09a.5.5 0 1 1-.708-.708l1.09-1.09a3 3 0 0 1 0-3.476l-1.09-1.09a.5.5 0 1 1 .708-.708M14 6.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 1 0"/>
+          </svg>
+      </a>
+
+      <ul class="nav nav-pills">
+          <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+          <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="#faq" class="nav-link">FAQs</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+  </header>
+  <!-- Header -->
+
+  <!-- Title -->
+  <div class="title-container">
+      <div class="container">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-lg-6">
+                  <h1 class="display-5 fw-bold lh-1 mb-3">Welcome to Safe Vaults</h1>
+                  <p class="lead">Your safe and secure storage solution with advanced features for every need.</p>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                      <!-- You can add buttons or other elements here if needed -->
+                  </div>
+              </div>
+              <div class="col-10 col-sm-8 col-lg-6">
+                  <!-- No need for img tag here as the background image will be handled by CSS -->
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="border-separator"></div>
+  <!-- Title -->
+
+    <!-- FAQ -->
+    <section id="faq" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="faq-item mb-3 p-3 border rounded">
+                        <h5>What are the sizes of the available vaults?</h5>
+                        <p>We offer a range of vault sizes to accommodate various needs. Please contact us for specific dimensions and availability.</p>
+                    </div>
+                    <div class="faq-item mb-3 p-3 border rounded">
+                        <h5>Can I access my vault at any time?</h5>
+                        <p>Yes, you can access your vault 24/7. We provide secure access to ensure your convenience and safety.</p>
+                    </div>
+                    <div class="faq-item mb-3 p-3 border rounded">
+                        <h5>What security measures are in place?</h5>
+                        <p>Our facility is equipped with state-of-the-art security systems, including surveillance cameras, alarm systems, and controlled access.</p>
+                    </div>
+                    <div class="faq-item mb-3 p-3 border rounded">
+                        <h5>How do I rent a vault?</h5>
+                        <p>To rent a vault, simply contact us to schedule a consultation. We will guide you through the rental process and help you select the right option for your needs.</p>
+                    </div>
+                    <div class="faq-item mb-3 p-3 border rounded">
+                        <h5>What if I lose my key?</h5>
+                        <p>If you lose your key, please contact us immediately. We will assist you in recovering access to your vault following our security protocols.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="concept-quality">
-        <h2>Concept & Quality</h2>
-        <p>Our restaurant will be outfitted to the highest standards with all new furnishings, including tables, chairs, plates, cutlery, cups, saucers, and glasses. We want to "stand out" from the rest.</p>
-        <p>Our clientele will come from various parts of Dubai, especially the local community where I have lived for the past 8 years. Many of them have asked when I would bring my UK-themed restaurant here because they know I understand what they and their children want and expect: a high-quality, upmarket restaurant serving delicious food at affordable prices.</p>
-        <p>Our concept is to provide this experience with a team of highly qualified staff, including a chef from our UK chain who is known for his high standards and consistent quality. We only source the best produce from top wholesalers and have zero tolerance for tasteless food.</p>
-    </section>
-    <section id="background-experience">
-        <h2>Background & Experience</h2>
-        <p>I am a British national, 53 years old, and have operated a number of successful businesses in both the UK and UAE. Back in the UK, I believe I was among the first to offer a buffet-style English carvery. I partnered in a restaurant called June's Diner and Bar, established over 25 years ago on the East Coast of Lincolnshire. This concept has since been adapted by many popular chains, especially Irish bars.</p>
-        <p>As you will see in the documented pictures in the carvery section, we will be making this one of our big weekend features as it's very popular with all nationalities. I believe ours will be a big winner, especially for the surrounding area, because of the massive selection of over 16 vegetables, all sourced for freshness, flavor, and taste at an affordable price. I was also a partner in Damons restaurant in Sheffield, England. This restaurant became known for its American diner-themed menu and was famous for its Barbecue Ribs, Combo Platters, Finest Seafood, Gourmet Burgers, Fillet steaks, Fish and Chips, the Famous English breakfast, and the Weekend roast carvery buffet.</p>
-        <p>I've lived in Dubai Green Community for the past 8 years. Additionally, I hold a Doctor of Finance degree.</p>
-        <div class="image-container">
-            <img src="degree.jpg" alt="Degree 1" class="degree-image">
-            <img src="degree2.jpg" alt="Degree 2" class="degree-image">
+    <!-- FAQ -->
+
+  <!-- Features -->
+<section id="features" class="py-5">
+  <div class="container">
+      <div class="text-center mb-4">
+          <h2 class="features-title">Features Include:</h2>
+      </div>
+      <div class="row row-sm justify-content-center">
+          <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card card--image card--image-icon card--no-border pt-4 text-left h-100">
+                  <div class="card__icon position-relative d-flex align-items-center justify-content-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-clock-history" viewBox="0 0 16 16">
+                          <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"/>
+                          <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"/>
+                          <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"/>
+                      </svg>
+                  </div>
+                  <div class="card__body mt-3">
+                      <h4 class="mt-4">24/7 Access</h4>
+                      <p>Access your vault anytime with our secure, 24/7 facility access.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card card--image card--image-icon card--no-border pt-4 text-left h-100">
+                  <div class="card__icon position-relative d-flex align-items-center justify-content-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-shield-check" viewBox="0 0 16 16">
+                          <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
+                          <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                      </svg>
+                  </div>
+                  <div class="card__body mt-3">
+                      <h4 class="mt-4">Top-Notch Security</h4>
+                      <p>Experience peace of mind with our advanced security systems and 24/7 monitoring.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card card--image card--image-icon card--no-border pt-4 text-left h-100">
+                  <div class="card__icon position-relative d-flex align-items-center justify-content-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                          <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+                          <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z"/>
+                      </svg>
+                  </div>
+                  <div class="card-body mt-3">
+                    <h4>Insurance Coverage</h4>
+                    <p>Protect your valuables with our comprehensive insurance coverage options.</p>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Features -->
+
+
+<!-- Pricing -->
+<section id="pricing" class="py-5">
+<div class="container">
+  <main>
+    <div class="row justify-content-center row-cols-1 row-cols-md-2 mb-3 text-center">
+      <div class="col-md-4 d-flex justify-content-center mb-4">
+        <div class="card rounded-3 shadow-sm border-dark">
+          <div class="card-header py-3 text-bg-dark border-dark">
+            <h4 class="my-0 fw-normal">Normal Customer</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$1500<small class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>2 users included</li>
+              <li>10KG of Weight</li>
+              <li>Priority email support</li>
+              <li>Help center access</li>
+            </ul>
+          </div>
         </div>
-    </section>
-    <footer>
-        <p>&copy; 2024 BJ's American Diner</p>
-    </footer>
+      </div>
+      <div class="col-md-4 d-flex justify-content-center mb-4">
+        <div class="card rounded-3 shadow-sm border-dark">
+          <div class="card-header py-3 text-bg-dark border-dark">
+            <h4 class="my-0 fw-normal">VIP </h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$2500<small class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>5 users included</li>
+              <li>20KG of Weight</li>
+              <li>Phone and email support</li>
+              <li>Help center access</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+</section>
+<!-- Pricing -->
+
+<!-- Vault Info -->
+<section class="vault-info">
+  <div class="vault-info-wrapper">
+    <!-- Header -->
+    <div class="vault-info-header text-center">
+      <h2 class="vault-header-title">Our Vault: Premium Protection</h2>
+      <p class="vault-header-subtitle">Fireproof, Waterproof, and Unbreakable</p>
+    </div>
+    <!-- Image and Description -->
+    <div class="vault-info-content">
+      <figure class="vault-image">
+        <img loading="lazy" decoding="async" width="2001" height="1648" src="https://www.keepsecure.ae/wp-content/uploads/2022/06/C-01.jpg" class="attachment-full size-full wp-image-999" alt="jewellery locker rental in uae" srcset="https://www.keepsecure.ae/wp-content/uploads/2022/06/C-01.jpg 2001w, https://www.keepsecure.ae/wp-content/uploads/2022/06/C-01-300x247.jpg 300w, https://www.keepsecure.ae/wp-content/uploads/2022/06/C-01-1024x843.jpg 1024w, https://www.keepsecure.ae/wp-content/uploads/2022/06/C-01-768x633.jpg 768w, https://www.keepsecure.ae/wp-content/uploads/2022/06/C-01-1536x1265.jpg 1536w" sizes="(max-width: 2001px) 100vw, 2001px">
+      </figure>
+      <div class="vault-details">
+        <h3 class="vault-title">Type A</h3>
+        <p class="vault-description">
+          Length: 12 Inches.<br>
+          Width: 12 Inches.<br>
+          Height: 15 Inches.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Vault Info -->
+
+<!-- Footer -->
+
+<div class="footer d-flex flex-column flex-sm-row justify-content-center align-items-center py-4 my-4 border-top">
+  <div class="container">
+  <p class="footer-text mb-0">© 2024 SDS, Inc. All rights reserved.</p>
+</div>
+</div>
+
+<!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9ME3arFQtaN40vD4sneT6E5ivDwb1Q2TcmBT6yJH+F8gX+iXUR6Z" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-7eJz0p9X9y84pX5IKy4/T3nRVRD6U0trC5jDLX1fksm6ZAYzC6cNiZZdmB35Bh+I4" crossorigin="anonymous"></script>
 </body>
+
 </html>

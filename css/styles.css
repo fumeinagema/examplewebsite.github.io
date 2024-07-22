@@ -1,0 +1,364 @@
+.title-container {
+    background-image: url("/img/vault.jpg"); /* Update with the correct path to your image */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 2rem; /* Adjust padding to avoid overlap with the header */
+    padding-bottom: 5rem; /* Increased padding to extend to the separator */
+}
+
+.title-container .col-lg-6 {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background for text readability */
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.title-container h1, .title-container p {
+    color: white; /* Ensure text is readable against the background image */
+}
+
+/* Additional Styles for the Title Section */
+.hero {
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Ensuring the background image covers till the separator */
+.title-container {
+    min-height: calc(100vh - 80px); /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Navigation Link Styles */
+.nav-link {
+    color: #343a40; /* Dark color for links */
+    font-size: 1.1rem; /* Slightly larger font size */
+    font-weight: bold; /* Bold font weight */
+    padding: 10px 15px; /* Padding around the menu items */
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #00aaff; /* Color change on hover and active state */
+    background-color: rgba(0, 170, 255, 0.1); /* Light background color on hover */
+    border-radius: 5px; /* Rounded corners for hover effect */
+}
+
+/* Updated Styles for Feature Boxes */
+.card--image-icon {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 1rem; /* Adjusted margin */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+}
+
+.border-separator {
+    border-bottom: 2px solid #ccc; /* Grey border */
+    margin-top: 2rem; /* Adjust spacing above the border if needed */
+    margin-bottom: 2rem; /* Adjust spacing below the border if needed */
+}
+
+.card--no-border {
+    border: none;
+}
+
+.card__icon svg {
+    width: 50px;
+    height: 50px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.card-body {
+    padding: 10px; /* Adjusted padding */
+}
+
+/* Hover Effect for Feature Cards */
+.card--image-icon:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card--image-icon:hover .card-body {
+    color: #0056b3; /* Change text color on hover */
+    background-color: #f8f9fa; /* Optional: change background color on hover */
+}
+
+.col-md-6.col-lg-4.mb-3 {
+    padding: 5px; /* Adjusted padding */
+    margin-bottom: 0; /* Adjusted margin */
+}
+
+/* Pricing Section Styles */
+#pricing .card {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: -10px; /* Reduce bottom margin */
+    padding: 10px; /* Adjust padding */
+    transition: all 0.3s ease;
+}
+
+#pricing .pricing-card-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#pricing .btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+#pricing .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+#pricing .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+#pricing .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Welcome to Safe Vaults Section Styles */
+#hero {
+    padding: 5rem 1rem;
+    text-align: center;
+    color: white;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#hero .btn {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+}
+
+.row-cols-md-2 .col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Optional: Adjust Spacing Between Cards */
+.card {
+    margin: 0 auto;
+}
+
+/* Enhanced Pricing Cards Styles */
+.card.mb-4.rounded-3.shadow-sm {
+    border-radius: 12px; /* Slightly rounded corners */
+    padding: 2rem;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Pro Plan Styling */
+.card.pro {
+    background: #d0e9ff; /* Light blue background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card.pro:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Enterprise Plan Styling */
+.card.enterprise {
+    background: #f5c518; /* Gold background */
+    color: white; /* Text color */
+}
+
+.card.enterprise .card-body {
+    background: #f5c518; /* Gold background for card body */
+    color: white; /* Text color */
+}
+
+.card.enterprise:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Normal Plan Styling */
+.card.normal {
+    background: #ffffff; /* Clean white background */
+    color: #333; /* Dark text for contrast */
+    border: 1px solid #e0e0e0; /* Subtle border */
+    text-align: center; /* Center text */
+}
+
+.card.normal:hover {
+    background: #f9f9f9; /* Light grey background on hover */
+    border-color: #cccccc; /* Slightly darker border on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+}
+
+/* VIP Plan Styling */
+.card.vip {
+    background: #ffffff; /* Clean white background */
+    color: #333; /* Dark text for contrast */
+    border: 1px solid #007bff; /* Blue border to make it stand out */
+    text-align: center; /* Center text */
+}
+
+.card.vip:hover {
+    background: #f0f8ff; /* Light blue background on hover */
+    border-color: #0056b3; /* Darker blue border on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+}
+
+/* Header and Title Styling */
+.card-header {
+    background: #007bff; /* Blue background for the header */
+    color: white; /* White text for contrast */
+    padding: 1rem;
+    border-bottom: none; /* Remove bottom border */
+}
+
+.card-title {
+    color: #007bff; /* Blue color for the title */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Body Text Styling */
+.card-body {
+    color: #555; /* Dark grey text for readability */
+}
+
+.card ul.list-unstyled {
+    color: #666; /* Slightly lighter grey for list items */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/* Additional Hover Effects */
+.card:hover .card-title {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.card:hover .card-body {
+    color: #333; /* Darker text on hover */
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center; /* Center text and icons in the footer */
+}
+
+.footer-text {
+    margin-bottom: 0; /* Remove bottom margin from paragraph */
+}
+
+.footer ul {
+    margin-top: 0; /* Remove top margin from ul */
+}
+
+.footer ul li {
+    margin-left: 1rem; /* Add left margin to list items */
+}
+
+.footer a {
+    color: #6c757d; /* Default link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer a:hover {
+    color: #007bff; /* Color on hover */
+}
+
+/* Vault Info Section */
+.vault-info {
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+}
+
+.vault-info-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.vault-info-header {
+    margin-bottom: 1.5rem;
+}
+
+.vault-header-title {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.vault-header-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: 800;
+}
+
+.vault-info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.vault-image img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vault-details {
+    text-align: center;
+}
+
+.vault-title {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.vault-description {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    .footer {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+}
